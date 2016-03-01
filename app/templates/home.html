@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+{% block js %}
+{% endblock %}
+
+
+{% block main %}
+I am home.
+<a href="{{url_for('logout') }}"><button class="btn btn-default">Logout</button></a>
+<a href="{{url_for('profile_list') }}"><button class="btn btn-default">Profiles</button></a>
+{% endblock %}
