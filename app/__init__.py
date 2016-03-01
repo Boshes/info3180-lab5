@@ -8,8 +8,8 @@ from flask.ext.openid import OpenID, COMMON_PROVIDERS
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "this is a super secure key"
 app.config['OPENID_PROVIDERS'] = COMMON_PROVIDERS
-# app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://jeebwiqssugknq:VLyKudt2cB8VbSkxTatYrnk3ZD@ec2-54-227-250-148.compute-1.amazonaws.com:5432/d4a90247mjvram"
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://lab5:lab5@localhost/lab5"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://cpszstmfjktcva:Lc6vcVRVH8KJz4itSa21w8_-RG@ec2-54-227-250-148.compute-1.amazonaws.com:5432/d78fr778jcg850"
+# app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://lab5:lab5@localhost/lab5"
 db = SQLAlchemy(app)
 db.create_all()
 lm = LoginManager()
