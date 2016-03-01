@@ -12,6 +12,7 @@ app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
 app.config['SECRET_KEY'] = "this is a super secure key"
 app.config['OPENID_PROVIDERS'] = COMMON_PROVIDERS
+#Go to Heroku: http://sheltered-temple-35750.herokuapp.com/login
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://cpszstmfjktcva:Lc6vcVRVH8KJz4itSa21w8_-RG@ec2-54-227-250-148.compute-1.amazonaws.com:5432/d78fr778jcg850"
 # app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://lab5:lab5@localhost/lab5"
 db = SQLAlchemy(app)
