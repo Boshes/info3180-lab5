@@ -1,5 +1,6 @@
 from . import db  
-class MyProfile(db.Model):     
+class MyProfile(db.Model): 
+    __tablename__ = 'profiles'
     id = db.Column(db.Integer, primary_key=True)     
     first_name = db.Column(db.String(80))     
     last_name = db.Column(db.String(80)) 
